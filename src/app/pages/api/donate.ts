@@ -38,7 +38,6 @@ export default async function handler(
 function generateTransactionId() {
   return `DONATION-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
 }
-
 // Implementar com a API PIX real
 async function generatePixPayment(transactionId: string) {
   return {
